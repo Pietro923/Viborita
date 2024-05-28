@@ -1,0 +1,81 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.infoBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 500px;
+    width: 100%;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#gameOver {
+    display: none;
+    font-size: 30px;
+    color: red;
+    margin-top: 20px;
+}
+
+.square {
+    width: 100%; /* Asegura que las celdas sean cuadradas */
+    padding-bottom: 100%; /* Relación de aspecto cuadrada */
+    position: relative; /* Necesario para la relación de aspecto cuadrada */
+}
+
+.emptySquare {
+    background-color: #6d71b5;
+}
+
+.snakeSquare {
+    background-color: #5bce4c;
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    background-color: #e75555;
+    border: 1px solid #000;
+}
